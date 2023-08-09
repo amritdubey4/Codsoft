@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap');
+* {
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(40deg, #303030, #000000);
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-gap: 13px;
+  max-width: 600px;
+  padding: 12px;
+  background-color: transparent;
+  box-shadow: 0 5px 15px rgba(88, 100, 88, 10);
+  border-radius: 30px;
+}
+
+.display {
+  grid-column: 1 / span 4;
+  background-color: transparent;
+  color: #eee;
+  padding: 20px;
+  font-size: 45px;
+  text-align: right;
+  /* box-shadow: -8px -8px 15px rgba(355, 155, 250, 0.2); */
+  border-radius: 30px;
+}
+
+button {
+  padding: 15px;
+  font-size: 28px;
+  text-align: center;
+  color: #eeeeee;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: -3px -3px 5px rgba(200, 200, 200, 0.25);
+}
+
+input {
+  width: 300px;
+  border: none;
+  box-shadow: 5px 15px rgba(88, 100, 88, 10);
+}
+
+button[data-value='='] {
+  background-color: #447270;
+  color: #ffffff;
+}
+
+button[data-value='+'] {
+  background-color: #447270;
+  color: #ffffff;
+}
+
+button[data-value='-'] {
+  background-color: #447270;
+  color: #ffffff;
+}
+
+button[data-value='*'] {
+  background-color: #447270;
+  color: #ffffff;
+}
+
+button[data-value='/'] {
+  background-color: #447270;
+  color: #ffffff;
+}
+
+button[data-value='√'] {
+  background-color: #447270;
+  color: #ffffff;
+}
+
+button[data-value='C'] {
+  background-color: #e91e;
+  color: #ffffff;
+}
